@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Playlist</title>
+ <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pstyle.css">
+</head>
+<body>
+<button id="backBtn">← Menú</button>
+<div class="container">
+      <div class="player">
+      <div class="cover">
+        <img id="cover" src="https://via.placeholder.com/150" alt="cover">
+        </div>
+          <div class="info">
+        <h2 id="title">Selecciona una canción</h2>
+        <p id="artist">---</p>
+          </div>
+        <audio id="audio"></audio>
+        <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="time">
+  <span id="currentTime">0:00</span>
+  <span>/</span>
+  <span id="duration">0:00</span>
+</div>
+   <div class="controls">
+        <button onclick="prevSong()">⏮</button>
+        <button id="playBtn" onclick="togglePlay()">▶</button>
+        <button onclick="nextSong()">⏭</button>
+      </div>
+    </div>
+
+    <div class="playlist">
+      <h3>Playlist</h3>
+      <ul id="list"></ul>
+    </div>
+
+
+  </div>
+
+  <script src="pscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("assets/img/WELCOME.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* zona invisible del candado */
+.zona-candado {
+  position: absolute;
+  width: 259px;
+  height: 259px;
+
+  /* AJUSTA ESTO hasta que coincida con el candado */
+  top: 49%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* transición (pantalla negra) */
+.transicion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+/* clase activa */
+.transicion.activa {
+  opacity: 1;
+}

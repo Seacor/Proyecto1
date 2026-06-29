@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  background-image: url("assets/img/1.png");
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+/* ZONAS INVISIBLES */
+.zona {
+  position: absolute;
+  height: 55%;
+  width: 23%;
+  top: 39%;
+  cursor: pointer;
+}
+
+/* cada carta */
+.mensaje {
+  left:17%;
+}
+
+.musica {
+  left: 61%;
+}
+
+#backBtn{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+
+    padding: 10px 15px;
+
+    background: rgba(20,20,30,.85);
+    color: white;
+
+    box-shadow: 0 0 20px rgb(0, 89, 255);
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-family:'Courier New', Courier, monospace;
+font-weight: 500;
+    cursor: pointer;
+
+    z-index: 999;
+
+    transition: .25s;
+}
+
+#backBtn:hover{
+    background: #4fd8ff;
+    color: black;
+    transform: scale(1.05);
+}
